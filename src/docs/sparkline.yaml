@@ -1,0 +1,30 @@
+/sparkline/{currencyId}/{interval}/{tokenId}.svg:
+  get:
+    summary: Generate a sparkline SVG
+    description: Retrieve a sparkline SVG image for the given currency, interval, and token ID.
+    parameters:
+      - in: path
+        name: currencyId
+        required: true
+        schema:
+          type: string
+        description: The ID of the currency
+      - in: path
+        name: interval
+        required: true
+        schema:
+          type: string
+        description: The time interval for the sparkline data
+      - in: path
+        name: tokenId
+        required: true
+        schema:
+          type: string
+        description: The token ID of the cryptocurrency
+    responses:
+      200:
+        description: Successful response with the sparkline SVG image.
+      400:
+        description: Bad request when the required parameters are not provided.
+      500:
+        description: Internal server error.

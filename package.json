@@ -1,0 +1,19 @@
+{
+  "name": "sparkline-server",
+  "version": "1.0.0",
+  "description": "An Express.js service that generates and serves dynamic sparkline SVG images for cryptocurrency metrics.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chart.js": "^3.9.1",
+    "chartjs-node-canvas": "^4.1.6",
+    "express": "^4.18.2",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.0"
+  }
+}
